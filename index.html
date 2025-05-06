@@ -3,50 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Daisy Accessories</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Movie Reviews</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>🌼 Daisy Accessories</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Collections</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <h1>🎬 Movie Reviews</h1>
   </header>
 
-  <section class="hero">
-    <h2>Blossom with Elegance</h2>
-    <p>Handmade accessories inspired by daisies and nature.</p>
-    <button onclick="showPopup()">Shop Now</button>
-  </section>
+  <main>
+    <section class="review-form">
+      <h2>Submit a Review</h2>
+      <form id="reviewForm">
+        <input type="text" id="movieTitle" placeholder="Movie Title" required />
+        <textarea id="reviewText" placeholder="Your Review" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
 
-  <section class="products">
-    <h3>Featured Items</h3>
-    <div class="product-card" onclick="showPopup()">
-      <img src="https://via.placeholder.com/150?text=Daisy+Earrings" alt="Daisy Earrings">
-      <p>Daisy Earrings</p>
-    </div>
-    <div class="product-card" onclick="showPopup()">
-      <img src="https://via.placeholder.com/150?text=Floral+Bracelet" alt="Floral Bracelet">
-      <p>Floral Bracelet</p>
-    </div>
-  </section>
-
-  <div id="popup" class="popup">
-    <div class="popup-content">
-      <span onclick="closePopup()" class="close-btn">&times;</span>
-      <h3>Item Preview</h3>
-      <p>This is where item details would go. 🌼</p>
-    </div>
-  </div>
+    <section class="reviews" id="reviews">
+      <h2>Latest Reviews</h2>
+      
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Daisy Accessories</p>
+    <p>&copy; 2025 Movie Reviews</p>
   </footer>
 
   <script src="script.js"></script>
